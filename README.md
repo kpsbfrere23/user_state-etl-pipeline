@@ -1,2 +1,12 @@
 # user_state-etl-pipeline
-an Airflow ETL pipeline that extracts users from an API &amp; Transforms the data by grouping users by state to load in MongoDB database
+This pipeline extracts user data from the randomuser.me API, transforms it by grouping users based on their state, and loads the result into a MongoDB database.
+
+Features
+
+Daily extraction of 500+ random user records
+
+Aggregates users by state in the transformation step
+
+Loads structured results into a MongoDB collection
+
+Dockerized and orchestrated with Apache Airflow
